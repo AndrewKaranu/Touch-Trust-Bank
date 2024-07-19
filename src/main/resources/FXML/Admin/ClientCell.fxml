@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="50.0" prefWidth="750.0" styleClass="client_cell_container"
+            stylesheets="@../../Styles/ClientCellStyles.css" xmlns="http://javafx.com/javafx/22"
+            xmlns:fx="http://javafx.com/fxml/1"
+            >
+   <FontAwesomeIconView glyphName="USER" layoutX="8.0" layoutY="29.0" size="20"
+                        styleClass="client_cell_container_fontAwesome" AnchorPane.leftAnchor="14.0"
+                        AnchorPane.topAnchor="14.0"/>
+   <HBox layoutX="52.0" layoutY="-25.0" prefHeight="40.0" prefWidth="550.0" styleClass="client_cell_container_hbox"
+         AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="5.0">
+      <Label fx:id="fName_lbl" styleClass="client_cell_container_hbox_label" text="Nathan"/>
+      <Label fx:id="lName_lbl" styleClass="client_cell_container_hbox_label" text="Bugolobi"/>
+      <Label fx:id="pAddress_lbl" styleClass="client_cell_container_hbox_label" text="\@bBaker121"/>
+      <Label fx:id="ch_acc_lbl" styleClass="acc_display_label" text="25469921">
+         <font>
+            <Font name="System Bold" size="12.0"/>
+         </font>
+      </Label>
+      <Label fx:id="sv_acc_lbl" styleClass="acc_display_label" text="23330213"/>
+      <Label fx:id="date_lbl" styleClass="client_cell_container_hbox_label" text="7-18-2022"/>
+   </HBox>
+   <Button fx:id="delete_btn" layoutX="636.0" layoutY="7.0" mnemonicParsing="false" styleClass="delete_btn"
+           text="Button" textFill="WHITE" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+      <graphic>
+         <FontAwesomeIconView fill="WHITE" glyphName="WINDOW_CLOSE_ALT" size="15"/>
+      </graphic>
+   </Button>
+</AnchorPane>
