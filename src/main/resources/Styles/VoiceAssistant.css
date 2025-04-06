@@ -1,0 +1,109 @@
+.voice_assistant_container {
+    -fx-background-color: #F5F5F5;
+}
+
+.voice_assistant_container Text {
+    -fx-fill: #2e7d32;
+    -fx-font-size: 24px;
+    -fx-font-family: "Calibri Light";
+    -fx-font-weight: bold;
+}
+
+.conversation_scroll {
+    -fx-background-color: transparent;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.conversation_scroll .viewport {
+    -fx-background-color: white;
+}
+
+.conversation_box {
+    -fx-background-color: white;
+    -fx-padding: 10px;
+}
+
+.user_message {
+    -fx-background-color: #e3f2fd;
+    -fx-background-radius: 15px;
+    -fx-padding: 10px;
+    -fx-max-width: 600px;
+    -fx-alignment: center-right;
+}
+
+.assistant_message {
+    -fx-background-color: #e8f5e9;
+    -fx-background-radius: 15px;
+    -fx-padding: 10px;
+    -fx-max-width: 600px;
+    -fx-alignment: center-left;
+}
+
+.status_box {
+    -fx-padding: 5px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.status_box Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #757575;
+}
+
+.input_box {
+    -fx-padding: 10px 0;
+}
+
+.input_box TextArea {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+}
+
+Button {
+    -fx-background-color: linear-gradient(to right, #132a13, #235f25);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: linear-gradient(to right, #1b3b1b, #2e7d32);
+}
+
+.start_button {
+    -fx-background-color: linear-gradient(to right, #1b5e20, #388e3c);
+}
+
+.start_button:hover {
+    -fx-background-color: linear-gradient(to right, #2e7d32, #43a047);
+}
+
+.stop_button {
+    -fx-background-color: linear-gradient(to right, #b71c1c, #d32f2f);
+}
+
+.stop_button:hover {
+    -fx-background-color: linear-gradient(to right, #c62828, #e53935);
+}
+
+.help_button {
+    -fx-background-color: linear-gradient(to right, #0d47a1, #1976d2);
+}
+
+.help_button:hover {
+    -fx-background-color: linear-gradient(to right, #1565c0, #1e88e5);
+}
+
+.send_button {
+    -fx-background-color: linear-gradient(to right, #0d47a1, #1976d2);
+}
+
+.send_button:hover {
+    -fx-background-color: linear-gradient(to right, #1565c0, #1e88e5);
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="deposit_container" stylesheets="@../../Styles/Deposit.css"
+            xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.touchtrust.touchtrustbank.Controllers.Admin.DepositController">
+   <VBox layoutX="47.0" layoutY="90.0" prefHeight="570.0" prefWidth="820.0" AnchorPane.leftAnchor="15.0"
+         AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0">
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="820.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="search_box_text"
+               text="Search by Payee Address:"/>
+         <TextField fx:id="pAddress_fld">
+            <styleClass>
+               <String fx:value="search_box_textfield"/>
+               <String fx:value="search_box"/>
+            </styleClass>
+         </TextField>
+         <Button fx:id="search_btn" mnemonicParsing="false" styleClass="search_box_button" text="Search">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20"/>
+            </graphic>
+         </Button>
+      </HBox>
+      <ListView fx:id="result_listview" prefHeight="200.0" prefWidth="820.0" styleClass="listview"/>
+      <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="315.0" prefWidth="820.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="search_box_text" text="Deposit Section:"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="search_box_text" text="Amount"/>
+         <TextField fx:id="ammount_fld">
+            <styleClass>
+               <String fx:value="search_box_textfield"/>
+               <String fx:value="search_box"/>
+            </styleClass>
+         </TextField>
+         <Button fx:id="deposit_btn" mnemonicParsing="false" styleClass="search_box_button" text="Deposit">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="20"/>
+            </graphic>
+         </Button>
+      </VBox>
+   </VBox>
+</AnchorPane>

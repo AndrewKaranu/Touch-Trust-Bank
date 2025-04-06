@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="voice_assistant_container"
+            stylesheets="@../../Styles/VoiceAssistant.css" xmlns="http://javafx.com/javafx/22"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.touchtrust.touchtrustbank.Controllers.Client.VoiceAssistantController">
+   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voice Assistant"
+         AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0"/>
+   
+   <VBox layoutX="14.0" layoutY="45.0" prefHeight="600.0" prefWidth="820.0"
+         AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="45.0">
+      
+      <ScrollPane fx:id="conversation_scroll" fitToHeight="true" fitToWidth="true" prefHeight="500.0" prefWidth="820.0" styleClass="conversation_scroll">
+         <VBox fx:id="conversation_container" prefHeight="498.0" prefWidth="818.0" spacing="10" styleClass="conversation_box" />
+      </ScrollPane>
+      
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="820.0" spacing="10" styleClass="status_box" VBox.vgrow="NEVER">
+         <Label fx:id="status_label" text="Ready to listen..." />
+      </HBox>
+      
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="820.0" spacing="20" VBox.vgrow="NEVER">
+         <Button fx:id="start_listening_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="start_button" text="Start Listening">
+            <graphic>
+               <FontAwesomeIconView glyphName="MICROPHONE" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="stop_listening_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="stop_button" text="Stop Listening">
+            <graphic>
+               <FontAwesomeIconView glyphName="STOP" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="help_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="help_button" text="Voice Commands">
+            <graphic>
+               <FontAwesomeIconView glyphName="QUESTION_CIRCLE" size="20" />
+            </graphic>
+         </Button>
+      </HBox>
+      
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="820.0" spacing="10" styleClass="input_box">
+         <TextArea fx:id="text_input" prefHeight="100.0" prefWidth="700.0" promptText="Or type your question here..." />
+         <Button fx:id="send_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="send_button" text="Send">
+            <graphic>
+               <FontAwesomeIconView glyphName="SEND" size="20" />
+            </graphic>
+         </Button>
+      </HBox>
+   </VBox>
+</AnchorPane>
